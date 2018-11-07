@@ -119,6 +119,6 @@ namespace SnakesAndLaddersTests
             board.MoveToken(11);
 
             Assert.That(token.CurrentSquare, Is.EqualTo(12));
-        }
+        }        
     }
 }

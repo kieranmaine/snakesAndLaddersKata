@@ -53,8 +53,10 @@ namespace SnakesAndLadders
             }
 
             if (ladder != null)
+            {
                 Token.Move(ladder.End - ladder.Start);
-
+            }
+            
             if (Token.CurrentSquare == 100)
             {
                 PlayerHasWon = true;
