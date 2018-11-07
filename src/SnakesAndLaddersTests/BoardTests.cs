@@ -49,7 +49,6 @@ namespace SnakesAndLaddersTests
 
             board.MoveToken(3);
 
-            Assert.That(token.CurrentSquare, Is.EqualTo(100));
             Assert.That(board.PlayerHasWon, Is.True);
         }
 
@@ -62,8 +61,7 @@ namespace SnakesAndLaddersTests
             var board = new Board(token);
 
             board.MoveToken(4);
-
-            Assert.That(token.CurrentSquare, Is.EqualTo(97));
+            
             Assert.That(board.PlayerHasWon, Is.False);
         }
     }

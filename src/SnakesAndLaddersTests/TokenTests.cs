@@ -39,5 +39,23 @@ namespace SnakesAndLaddersTests
 
             Assert.That(token.CurrentSquare, Is.EqualTo(8));
         }
+
+        [Test]
+        public void TokenIsMovedTo100()
+        {
+            var token = new Token();
+            token.Move(99);
+
+            Assert.That(token.CurrentSquare, Is.EqualTo(100));
+        }
+
+        [Test]
+        public void TokenIsMovedPast100()
+        {
+            var token = new Token();
+            token.Move(100);
+
+            Assert.That(token.CurrentSquare, Is.EqualTo(1));
+        }
     }
 }
