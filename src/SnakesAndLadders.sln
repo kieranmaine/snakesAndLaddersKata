@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakesAndLadders", "SnakesAndLadders\SnakesAndLadders.csproj", "{99CDC847-11F7-41AD-BDA4-EF9A842A0C25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakesAndLaddersTests", "SnakesAndLaddersTests\SnakesAndLaddersTests.csproj", "{5DC15787-F85E-413E-87E4-3BCC8B749A04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99CDC847-11F7-41AD-BDA4-EF9A842A0C25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99CDC847-11F7-41AD-BDA4-EF9A842A0C25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99CDC847-11F7-41AD-BDA4-EF9A842A0C25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99CDC847-11F7-41AD-BDA4-EF9A842A0C25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DC15787-F85E-413E-87E4-3BCC8B749A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC15787-F85E-413E-87E4-3BCC8B749A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC15787-F85E-413E-87E4-3BCC8B749A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC15787-F85E-413E-87E4-3BCC8B749A04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9956CFF2-0DCB-47AE-99B0-37601613ECA0}
+	EndGlobalSection
+EndGlobal
