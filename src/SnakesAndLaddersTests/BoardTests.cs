@@ -64,5 +64,61 @@ namespace SnakesAndLaddersTests
             
             Assert.That(board.PlayerHasWon, Is.False);
         }
+
+        [Test]
+        public void SnakeMovesTokenBackIfTokenLandsOnEndOfSnake()
+        {
+            var token = new Token();
+            
+            var snakes = new[] { new Snake(2, 12) };
+
+            var board = new Board(token, snakes, null);
+
+            board.MoveToken(11);
+
+            Assert.That(token.CurrentSquare, Is.EqualTo(2));
+        }
+
+        [Test]
+        public void SnakeDoesNothingIfTokenLandsOnStartOfSnake()
+        {
+            var token = new Token();
+
+            var snakes = new[] { new Snake(2, 12) };
+
+            var board = new Board(token, snakes, null);
+
+            board.MoveToken(1);
+
+            Assert.That(token.CurrentSquare, Is.EqualTo(2));
+        }
+
+        [Test]
+        public void LadderMovesTokenForwardIfTokenLandsOnStartOfLadder()
+        {
+            var token = new Token();
+
+            var ladders = new[] { new Ladder(2, 12) };
+
+            var board = new Board(token, null, ladders);
+
+            board.MoveToken(1);
+
+            Assert.That(token.CurrentSquare, Is.EqualTo(12));
+        }
+
+        [Test]
+        public void LadderDoesNothingIfTokenLandsOnEndOfLadder()
+        {
+            var token = new Token();
+
+            var ladders = new[] { new Ladder(2, 12) };
+
+            var board = new Board(token, null, ladders);
+
+            board.MoveToken(11);
+
+            Assert.That(token.CurrentSquare, Is.EqualTo(12));
+        }
     }
 }
